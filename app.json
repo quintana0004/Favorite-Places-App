@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Favorite Places",
+    "slug": "favplace",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "sdkVersion":"44.0.0",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#003B88"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#003B88"
+      },
+      "permissions": [
+        "CAMERA"
+      ],
+      "package": "com.quintana.favplace",
+      "config": {
+        "googleMaps": { "apiKey": "AIzaSyDdqfhPH2YkVeCIL92aP7YVzq42QCPhtKY" }   
+     }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app needs access to your camera in order to take photos of your favorite places."
+        }
+      ]
+    ]
+  }
+}
